@@ -1,32 +1,49 @@
 # PyGlueTokenizer
-A tool for obtaining natural language summaries of Python functions.
+A tool for obtaining natural language summaries of Python functions by utilizing Code2Seq and CodeGen.
 
-Steps
+## Team:
+Abdelrahman Abdalla
+Kiran Deol
+Nahome Wolde-Giorgis
 
-#if you don't have it installed
-python3 -m pip install virtualenv
+### Steps
 
-#Create virtualenv
-python3 -m virtualenv venv
+0. if you don't have it installed
 
-#activate virtualenv
-source venv/bin/activate
+    - `python3 -m pip install virtualenv`
 
-#run setup.sh
-sh setup.sh
+1. Create virtualenv
 
-#run CodeGen-main/install_env.sh
-sh CodeGen-main/install_env.sh
+    - `python3 -m virtualenv venv`
 
-#install requirments
-pip install -r requirements.txt
+2. activate virtualenv
 
-#Use this instead if it gets killed ```pip install --no-cache-dir -r requirements.txt```
+    - `source venv/bin/activate`
 
-#download the CodeGen Model
-wget https://dl.fbaipublicfiles.com/transcoder/pre_trained_models/translator_transcoder_size_from_DOBF.pth -P CodeGen-main
+3. run setup.sh
 
-#download the Code2Seq Model
+    - `sh setup.sh`
+
+<!-- This content will not appear in the rendered Markdown
+run CodeGen-main/install_env.sh
+
+`sh CodeGen-main/install_env.sh`
+
+install requirments
+
+`pip install -r requirements.txt`
+
+*Use this instead if it gets killed* `pip install --no-cache-dir -r requirements.txt`
+
+download the CodeGen Model
+
+`wget https://dl.fbaipublicfiles.com/transcoder/pre_trained_models/translator_transcoder_size_from_DOBF.pth -P CodeGen-main`
+
+download the Code2Seq Model
+
+```
 wget https://s3.amazonaws.com/code2seq/model/java-large/java-large-model.tar.gz -P code2seq
 tar -xvzf code2seq/java-large-model.tar.gz -C code2seq
 rm code2seq/java-large-model.tar.gz
+```
+-->

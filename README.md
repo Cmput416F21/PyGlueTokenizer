@@ -15,8 +15,8 @@ A tool for obtaining natural language summaries of Python functions by utilizing
     - `source venv/bin/activate`
 3. run setup.sh
     - `sh setup.sh`
-### Running the Program:
-4. to run the program run glue.py
+### Using the Program:
+4. to run the program run glue.py while inside of the Virtual enviroment
     - `python glue.py`
 5. choose the file you want to run the program on from the GUI, some sample files are provided in `CodeGen-main/codesamples`
 

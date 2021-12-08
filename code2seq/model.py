@@ -100,11 +100,9 @@ class Model:
                         self.trace(sum_loss, batch_num, multi_batch_start_time)
                         sum_loss = 0
                         multi_batch_start_time = time.time()
-                    if batch_num == 200:
-                        raise Exception('Stop at batch 1')
 
 
-            except Exception as error:
+            except tf.errors.OutOfRangeError:
                 self.epochs_trained += self.config.SAVE_EVERY_EPOCHS
                 print('Finished %d epochs' % self.config.SAVE_EVERY_EPOCHS)
                 results, precision, recall, f1, rouge = self.evaluate()

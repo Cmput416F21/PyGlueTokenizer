@@ -2,11 +2,11 @@ class Config:
     @staticmethod
     def get_default_config(args):
         config = Config(args)
-        config.NUM_EPOCHS = 1
+        config.NUM_EPOCHS = 3000
         config.SAVE_EVERY_EPOCHS = 1
-        config.PATIENCE = 1
-        config.BATCH_SIZE = 256
-        config.TEST_BATCH_SIZE = 128
+        config.PATIENCE = 10
+        config.BATCH_SIZE = 512
+        config.TEST_BATCH_SIZE = 256
         config.READER_NUM_PARALLEL_BATCHES = 1
         config.SHUFFLE_BUFFER_SIZE = 10000
         config.CSV_BUFFER_SIZE = 100 * 1024 * 1024  # 100 MB
@@ -25,7 +25,7 @@ class Config:
         config.BIRNN = True
         config.RANDOM_CONTEXTS = True
         config.BEAM_WIDTH = 0
-        config.USE_MOMENTUM = False
+        config.USE_MOMENTUM = True
         return config
 
     def take_model_hyperparams_from(self, otherConfig):

@@ -1,3 +1,0 @@
-include fastBPE/*.cc
-include fastBPE/*.hpp
-include fastBPE/*.pyx

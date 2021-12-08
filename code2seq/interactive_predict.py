@@ -28,7 +28,7 @@ class InteractivePredictor:
         try:
             predict_lines, pc_info_dict = self.path_extractor.extract_paths(user_input)
         except ValueError:
-            print("Error: please verify that your .py file has no syntax errors!")
+            print("Error: Code2Seq cannot predict on this!")
             return
         model_results = self.model.predict(predict_lines)
 
@@ -40,6 +40,7 @@ class InteractivePredictor:
                 for step in method_prediction.predictions:
                     myfile.write(step.prediction + ' ')
                 myfile.close()
+
             else:
                 print('Predicted:')
                 for predicted_seq in method_prediction.predictions:

@@ -150,7 +150,7 @@ def set_pretrain_emb(model, dico, word2id, embeddings, gpu):
 
 
 @torch.no_grad()
-def build_model(params, dico, gpu=True):
+def build_model(params, dico, gpu=False):
     """
     Build model.
     """
@@ -277,7 +277,7 @@ def build_classifier(params):
     return [classifier.cuda()]
 
 
-def reload_transformer(params, path, dico, model, model_type, gpu=True):
+def reload_transformer(params, path, dico, model, model_type, gpu=False):
     """
     Reload a transformer state dict to current model:
     clean 'module.' from state dict,

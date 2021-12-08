@@ -25,9 +25,10 @@ A tool for obtaining natural language summaries of Python functions by utilizing
     - `source venv/bin/activate`
 3. run setup.sh if you are on Mac only
     - `sh setup.sh`
-    - if you are on windows or linux, you have to make sure that you have Tensorflow version 1.12 up and running (or 1.15, not recommended)
+    - if you are on Windows or Linux, you have to make sure that you have Tensorflow version 1.12 up and running (or 1.15, not recommended). See https://www.tensorflow.org/install/pip#package-location for more info.
     - Winows and linux users run W_L_setup.sh instead
         - `sh W_L_setup.sh`
+    - This process will take few minutes the first time you run it.
 ### Using the Program:
 4. Make sure your virtualenv is activated first
     - `source venv/bin/activate`

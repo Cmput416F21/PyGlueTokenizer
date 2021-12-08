@@ -2,13 +2,13 @@
 A tool for obtaining natural language summaries of Python functions by utilizing Code2Seq and CodeGen.
 
 ## Team:
-Abdelrahman Abdalla
-Kiran Deol
-Nahome Wolde-Giorgis
+- Abdelrahman Abdalla
+- Kiran Deol
+- Nahome Wolde-Giorgis
 
 ### Steps
 
-0. if you don't have it installed
+0. if you don't have virtualenv installed
 
     - `python3 -m pip install virtualenv`
 

@@ -1,5 +1,5 @@
 cd CodeGen-main
-sh CodeGen-main/install_env.sh
+sh install_env.sh
 cd ..
 pip install -r requirements.txt
 wget https://dl.fbaipublicfiles.com/transcoder/pre_trained_models/translator_transcoder_size_from_DOBF.pth -P CodeGen-main

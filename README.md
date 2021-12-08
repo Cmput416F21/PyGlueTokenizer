@@ -6,6 +6,10 @@ A tool for obtaining natural language summaries of Python functions by utilizing
 - Kiran Deol
 - Nahome Wolde-Giorgis
 
+### Requirments:
+- Conda `https://docs.conda.io/en/latest/`
+- wget
+
 ### Cloning the repo:
 - `git clone https://github.com/Cmput416F21/PyGlueTokenizer.git`
 - `cd PyGlueTokenizer`

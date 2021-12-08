@@ -1,4 +1,6 @@
 # PyGlueTokenizer
+<img src="https://news.mit.edu/sites/default/files/images/202012/MIT-Coding-Brain-01-press.jpg" width="500">
+
 A tool for obtaining natural language summaries of Python functions by utilizing Code2Seq and CodeGen.
 
 ## Team:
@@ -24,9 +26,11 @@ A tool for obtaining natural language summaries of Python functions by utilizing
 3. run setup.sh
     - `sh setup.sh`
 ### Using the Program:
-4. to run the program run glue.py while inside of the Virtual enviroment
+4. Make sure your virtualenv is activated first
+    - `source venv/bin/activate`
+5. To run the program run glue.py while inside of the Virtual enviroment
     - `python glue.py`
-5. choose the file you want to run the program on from the GUI, some sample files are provided in `CodeGen-main/codesamples`
+6. Choose the file you want to run the program on from the GUI, some sample files are provided in `CodeGen-main/codesamples`
 
 <!-- This content will not appear in the rendered Markdown
 run CodeGen-main/install_env.sh

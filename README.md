@@ -6,8 +6,7 @@ A tool for obtaining natural language summaries of Python functions by utilizing
 - Kiran Deol
 - Nahome Wolde-Giorgis
 
-### Steps:
-
+### Initial Setup:
 0. if you don't have virtualenv installed
     - `python3 -m pip install virtualenv`
 1. Create virtualenv
@@ -16,6 +15,7 @@ A tool for obtaining natural language summaries of Python functions by utilizing
     - `source venv/bin/activate`
 3. run setup.sh
     - `sh setup.sh`
+### Running the Program:
 4. to run the program run glue.py
     - `python glue.py`
 5. choose the file you want to run the program on from the GUI, some sample files are provided in `CodeGen-main/codesamples`

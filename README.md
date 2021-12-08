@@ -7,7 +7,7 @@ A tool for obtaining natural language summaries of Python functions by utilizing
 - Nahome Wolde-Giorgis
 
 ### Cloning the repo:
-- `git clone https://github.com/Cmput416F21/PyGlueTokenizer`
+- `git clone https://github.com/Cmput416F21/PyGlueTokenizer.git`
 - `cd PyGlueTokenizer`
 
 ### Initial Setup:

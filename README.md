@@ -6,7 +6,7 @@ A tool for obtaining natural language summaries of Python functions by utilizing
 - Kiran Deol
 - Nahome Wolde-Giorgis
 
-### Steps
+### Steps:
 
 0. if you don't have virtualenv installed
 

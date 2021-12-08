@@ -22,6 +22,7 @@ def code2seq_tokens():
                 old_java.write(line)
     os.chdir('code2seq')
     subprocess.check_output("python3 code2seq.py --load models/java-large-model/model_iter52.release --predict", shell=True)
+    os.chdir('..')
     return
 
 ### Get .JSON of parsed code ###
@@ -57,8 +58,8 @@ def main():
     filename = askopenfilename()  # show an "Open" dialog box and return the path to the selected file
     java_translation(filename)
     code2seq_tokens()
-    jdat = parse_code(filename)
-    draw_graph(jdat)
+    #jdat = parse_code(filename)
+    #draw_graph(jdat)
     subprocess.check_output("python3 visuals.py", shell=True)
     return
 

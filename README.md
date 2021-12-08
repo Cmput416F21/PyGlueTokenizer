@@ -10,7 +10,10 @@ python3 -m pip install virtualenv
 python3 -m virtualenv venv
 
 #activate virtualenv
-source virtual/bin/activate
+source venv/bin/activate
+
+#run setup.sh
+sh setup.sh
 
 #run CodeGen-main/install_env.sh
 sh CodeGen-main/install_env.sh

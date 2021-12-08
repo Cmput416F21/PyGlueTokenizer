@@ -109,8 +109,8 @@ class Translator:
         encoder, decoder = build_model(self.reloaded_params, self.dico)
         self.encoder = encoder[0]
         self.decoder = decoder[0]
-        self.encoder.cuda()
-        self.decoder.cuda()
+        #self.encoder.cuda()
+        #self.decoder.cuda()
         self.encoder.eval()
         self.decoder.eval()
 
@@ -132,7 +132,7 @@ class Translator:
         n=1,
         beam_size=1,
         sample_temperature=None,
-        device="cuda:0",
+        device="cpu",
         detokenize=True,
         max_tokens=None,
         length_penalty=0.5,
@@ -280,3 +280,8 @@ if __name__ == "__main__":
     for out in output:
         print("=" * 20)
         print(out)
+
+    myfile = open('JavaSample.txt', 'w')
+    for out in output:
+        myfile.write(out)
+    myfile.close()

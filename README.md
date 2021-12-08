@@ -6,6 +6,10 @@ A tool for obtaining natural language summaries of Python functions by utilizing
 - Kiran Deol
 - Nahome Wolde-Giorgis
 
+### Cloning the repo:
+- `git clone https://github.com/Cmput416F21/PyGlueTokenizer`
+- `cd PyGlueTokenizer`
+
 ### Initial Setup:
 0. if you don't have virtualenv installed
     - `python3 -m pip install virtualenv`
